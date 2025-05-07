@@ -4,7 +4,7 @@ async function safetyChecker(x) {
         // await delay(5000);
         let url = x;
         let security_key = "Theek";
-        const response = await fetch(`https://raw.githack.com/alysammy/client-control/main/clients/${url}.txt`);
+        const response = await fetch(`https://raw.githack.com/Yetii911/client-control-vcs/tree/main/clients${url}.txt`);
         let customer_security_key = await response.text();
         customer_security_key = customer_security_key.trim()
         if (security_key === customer_security_key || response.ok==false || response.status==404) {
